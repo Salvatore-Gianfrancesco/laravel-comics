@@ -2,51 +2,92 @@
 
 body {
     font-size: 14px;
-}
 
-header {
-    .header_top {
-        background-color: #0282f9;
+    img {
+        max-width: 100%;
+    }
 
-        a {
-            color: #ffffff;
-            font-size: 12px;
-            font-weight: 500;
-            text-decoration: none;
+    header {
+        .header_top {
+            background-color: #0282f9;
+
+            a {
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+
+        .header_bottom {
+            img {
+                width: 80px;
+                aspect-ratio: 1/1;
+            }
+
+            a {
+                height: 100%;
+                color: #303131;
+                font-weight: 500;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+
+                i {
+                    color: #0282f9;
+                    font-size: 12px;
+                }
+            }
+
+            .search {
+                font-weight: 500;
+
+                div {
+                    width: 120px;
+                    border-bottom: 2px solid #0282f9;
+                }
+            }
+
+            .active {
+                box-shadow: 0px 4px 0px 0px #0282f9;
+            }
         }
     }
 
-    .header_bottom {
-        img {
-            width: 80px;
-            aspect-ratio: 1/1;
-        }
-
-        a {
-            height: 100%;
-            color: #303131;
-            font-weight: 500;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-
-            i {
-                color: #0282f9;
-                font-size: 12px;
+    main {
+        .jumbotron {
+            img {
+                height: 24rem;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
             }
         }
 
-        .search {
-            font-weight: 500;
+        .current_series {
+            background-color: #1d1c1d;
 
-            div {
-                width: 120px;
-                border-bottom: 2px solid #0282f9;
+            .card {
+                background-color: #1d1c1d;
+                color: #ffffff;
+
+                img {
+                    height: 14rem;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
             }
         }
 
-        .active {
-            box-shadow: 0px 3px 0px 0px #0282f9;
+        .buy_comics {
+            background-color: #0282f9;
+            color: #ffffff;
+
+            img {
+                height: 60px;
+                max-width: 60px;
+            }
         }
     }
 }
