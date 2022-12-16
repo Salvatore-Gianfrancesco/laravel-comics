@@ -1,1 +1,52 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    font-size: 14px;
+}
+
+header {
+    .header_top {
+        background-color: #0282f9;
+
+        a {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+
+    .header_bottom {
+        img {
+            width: 80px;
+            aspect-ratio: 1/1;
+        }
+
+        a {
+            height: 100%;
+            color: #303131;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+
+            i {
+                color: #0282f9;
+                font-size: 12px;
+            }
+        }
+
+        .search {
+            font-weight: 500;
+
+            div {
+                width: 120px;
+                border-bottom: 2px solid #0282f9;
+            }
+        }
+
+        .active {
+            box-shadow: 0px 3px 0px 0px #0282f9;
+        }
+    }
+}
