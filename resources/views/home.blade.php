@@ -1,13 +1,17 @@
 @extends('layouts.app')
 
+@section('page-title')
+DC Comics
+@endsection
+
 @section('content')
 <!-- jumbotron -->
-<div class="jumbotron">
-    <img src="{{ Vite::asset('resources/img/jumbotron.jpg')}} " alt="jumbotron">
+<div class="jumbotron position-relative">
+    <div class="text-uppercase p-2">Current series</div>
 </div>
 
 <!-- current series -->
-<div class="current_series pt-4 pb-3">
+<div class="current_series pt-5 pb-4">
     <div class="container">
         <div class="row row-cols-6 g-3">
             @foreach($comics as $comic)
